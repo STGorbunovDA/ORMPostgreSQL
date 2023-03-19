@@ -2,7 +2,7 @@
 // использую ListRepository
 using ORMPostgreSQL;
 
-App<Worker> app = new App<Worker>(new ListRepository());
+App<Worker> app = new App<Worker>(new PostresRepository("Sanchaz"));
 
 app.Create(new Worker("Василий Иванов", 22, 3312));
 app.Create(new Worker("Василий Петров", 44, 3312));
