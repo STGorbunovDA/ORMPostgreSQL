@@ -15,7 +15,7 @@ namespace ORMPostgreSQL
             DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString =
-                @"Host{0}; Username = {1}; Password = {2}; Database = {3}";
+                @"Host={0}; Username={1}; Password={2}; Database={3}";
             optionsBuilder.UseNpgsql(
                 String.Format(connectionString, 
                 "localhost:5432",
